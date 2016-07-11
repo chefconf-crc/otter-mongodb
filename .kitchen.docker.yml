@@ -1,0 +1,21 @@
+driver:
+  name: docker
+
+provisioner:
+  name: chef_zero
+
+# verifier:
+#   name: inspec
+#   format: doc
+
+platforms:
+  - name: centos-6.5
+    driver_config:
+      forward:
+
+suites:
+  - name: default
+    run_list:
+      - recipe[otter-mongodb::default]
+      - recipe[selinux::disabled]
+    attributes:
