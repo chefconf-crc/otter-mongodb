@@ -1,0 +1,7 @@
+name 'otter-mongodb'
+maintainer 'The Authors'
+maintainer_email 'you@example.com'
+license 'all_rights'
+description 'Installs/Configures otter-mongodb'
+long_description 'Installs/Configures otter-mongodb'
+version '0.1.0'
